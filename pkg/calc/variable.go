@@ -14,6 +14,10 @@ func NewVariables(x, y int) *Variables {
 	}
 }
 
-func (s *Variables) GetFormattedString() string {
-	return fmt.Sprintf("X: %d, Y: %d", s.X, s.Y)
+func (v *Variables) GetFormattedString() string {
+	return fmt.Sprintf("X: %d, Y: %d", v.X, v.Y)
+}
+
+func (v *Variables) Add() int {
+	return v.X + v.Y
 }
